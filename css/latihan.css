@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* border: none; */
+    text-decoration: none;
+  }
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 5%;  
+    background-color: #F0F0F0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #111;
+}
+
+.navbar-nav {
+    display: flex;
+    flex: 1; /* isi ruang kosong yang sisa */
+    justify-content: center;
+}
+
+.navbar a {
+    color: #111;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/images/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.homi h1 {
+    padding-top:  30rem; 
+    max-width: 80rem;
+    font-size: 4rem;
+    color: #111;
+    line-height: 1.2;
+    margin-top: 0rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px #111;
+}
+
+.home .homi p {
+    padding: 3rem 10rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    font-weight: 100;
+    color: #111;
+    padding-bottom: 40rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+.about,
+.Destinasi {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2,
+.Destinasi h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(to right, #111 40%, #F0F0F0 60%);
+    color: transparent;
+    background-clip: text ;
+
+}
+
+.row,
+.rowdes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-img img,
+.destinasi-img img {
+    max-width: 100%;
+    height: auto;
+    width: 40rem;
+    border-radius: 10px;
+}
+
+.isiabout,
+.isidestinasi {
+    max-width: 600px;
+    text-align: justify;
+}
+
+
+.isiabout p,
+.isidestinasi p {
+    font-size: 25px;
+}
+
+.isidestinasi ol li {
+    margin: 5px 25px;
+}
+
+.isidestinasi a,
+.isidestinasi ol li {
+    font-size: 25px;
+    color: #111;
+}
+
+footer {
+    background-color: #F0F0F0;
+    text-align: center;
+    padding: 0.8rem 0 2rem;
+    margin-top: 3rem;
+}
+
+footer .social {
+    padding: 0.5rem 0;
+  }
+  
+footer .social a {
+    color: #111;
+    margin: 1rem;
+  }
+
+.navbar .navbar-nav a:hover, 
+.isidestinasi a:hover,
+footer .social a:hover,
+footer .links a:hover {
+    color: #f50606;
+}
+
+footer .social a i {
+    font-size: 1.5rem;
+}
+
+footer .links {
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+}
+
+footer .links a {
+    color: #111;
+    padding: 2rem 1rem;
+}
+
+footer .credit .links a {
+    font-size: 18px;
+}
+
+footer .credit a{
+    color: #111;
+    font-weight: 700;
+}
+
+.credit p {
+    padding-top: 10px;
+}
+
+@media (max-width: 768px){
+
+    html {
+        font-size: 65%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        justify-content: flex-start;  /* untk layar kecil kembali ke kiri menunya */
+    }
+
+    .navbar-nav a {
+        font-size: 10px;
+    }
+    
+    .navbar-logo {
+        /* display: block;
+        margin-bottom: 10px; */
+        font-size: 20px;
+    }
+
+    .home .homi p {
+        font-size: 12px;
+    }
+
+    .isiabout p,
+    .isidestinasi p,
+    .isidestinasi ol li a,
+    .isidestinasi ol li {
+        font-size: 12px;
+    }
+
+
+    .credit p {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-logo {
+        font-size: 18px;
+    }
+
+    .navbar-nav a {
+        font-size: 10px;
+        margin: 3px 5px; /* jarak gap */
+    }
+  }
+
+
+
