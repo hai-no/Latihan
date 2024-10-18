@@ -27,7 +27,7 @@ body {
 }
 
 .navbar .navbar-logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #111;
     font-style: italic;
@@ -92,10 +92,15 @@ body {
     justify-content: center;
 }
 
-.about,
-.Destinasi {
+.about {
     text-align: center;
     padding: 50px 20px;
+}
+
+.Destinasi {
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
 }
 
 .about h2,
@@ -109,8 +114,7 @@ body {
 
 }
 
-.row,
-.rowdes {
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,16 +122,43 @@ body {
     gap: 20px;
 }
 
-.about-img img,
+.rowdes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destinasi-img {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 .destinasi-img img {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.isidestinasi {
+    flex: 1;
+    padding-left: 5rem;
+    text-align: justify;
+}
+
+.about-img img {
     max-width: 100%;
     height: auto;
     width: 40rem;
     border-radius: 10px;
+    object-fit: cover;
+    
 }
 
-.isiabout,
-.isidestinasi {
+.isiabout {
     max-width: 600px;
     text-align: justify;
 }
@@ -139,7 +170,8 @@ body {
 }
 
 .isidestinasi ol li {
-    margin: 5px 25px;
+    padding-top: 10px;
+    padding-left: 2px;
 }
 
 .isidestinasi a,
@@ -151,7 +183,7 @@ body {
 footer {
     background-color: #F0F0F0;
     text-align: center;
-    padding: 0.8rem 0 2rem;
+    padding: 0.3rem 0 1rem;
     margin-top: 3rem;
 }
 
@@ -240,6 +272,16 @@ footer .credit a{
     .credit a {
         font-size: 10px;
     }
+
+    .rowdes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destinasi-img img {
+        width: 100%;
+    }
+    
 
 
 }
