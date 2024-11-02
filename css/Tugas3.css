@@ -112,7 +112,6 @@ body {
 .about h2,
 .Destinasi h2,
 .tabel h2,
-.gal h2,
 .form h2 {
     font-size: 2rem;
     text-align: center;
@@ -206,14 +205,6 @@ table {
     text-align: center;
     font-size: 1.2rem;
 }
-
-/* galeri */
-.gal .galeri {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
 
 /* form section */
 .form .maps {
