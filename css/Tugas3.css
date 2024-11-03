@@ -1,58 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    /* border: none; */
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  /* border: none; */
+  text-decoration: none;
+}
 
 body {
-    font-family: sans-serif;
-    background-color: white;
+  font-family: sans-serif;
+  background-color: white;
 }
 
 /* navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 5%;  
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .navbar .navbar-logo {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #111;
-    font-style: italic;
-    text-shadow: 1px 1px 3px #111;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  font-style: italic;
+  text-shadow: 1px 1px 3px #111;
 }
 
 .navbar-nav {
-    display: flex;
-    flex: 1;
-    justify-content: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
 .navbar a {
-    color: #111;
-    font-size: 15px;
-    margin: 0 15px;
+  color: #111;
+  font-size: 15px;
+  margin: 0 15px;
 }
 
 /* beranda */
-.home {
+/* .home {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -91,293 +89,279 @@ body {
     font-weight: 100;
     color: #F0F0F0;
     text-shadow: 1px 1px 3px #111; 
-    /* padding-bottom: 50rem; */
+    padding-bottom: 50rem;
     text-align: justify;
     justify-content: center;
-}
+} */
 
 /* about section */
 .about {
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 /* destinasi */
 .Destinasi {
-    margin: 20px;
-    padding: 20px;
-    text-align: left;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
 }
 
 .about h2,
 .Destinasi h2,
 .tabel h2,
 .form h2 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 4rem 0;
-    background: linear-gradient(to right, #111 40%, #F0F0F0 60%);
-    color: transparent;
-    background-clip: text ;
-
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(to right, #111 40%, #f0f0f0 60%);
+  color: transparent;
+  background-clip: text;
 }
 
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .rowdes {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .destinasi-img {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 .destinasi-img img {
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 40%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .isidestinasi {
-    flex: 1;
-    padding: 10px 25px;
-    text-align: justify;
+  flex: 1;
+  padding: 10px 25px;
+  text-align: justify;
 }
 
 .about-img img {
-    max-width: 100%;
-    height: auto;
-    width: 40rem;
-    border-radius: 10px;
-    object-fit: cover;
-    
+  max-width: 100%;
+  height: auto;
+  width: 40rem;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .isiabout {
-    max-width: 600px;
-    text-align: justify;
+  max-width: 600px;
+  text-align: justify;
 }
-
 
 .isiabout p,
 .isidestinasi p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .isidestinasi ol li {
-    padding-top: 10px;
-    padding-left: 2px;
+  padding-top: 10px;
+  padding-left: 2px;
 }
 
 .isidestinasi a,
 .isidestinasi ol li {
-    font-size: 25px;
-    color: #111;
+  font-size: 25px;
+  color: #111;
 }
 
 /* tabel section */
 .table {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
 }
 
-
-th,td,
+th,
+td,
 table {
-    border: 1px solid #111;
-    border-collapse: collapse;
-    padding: 8px;
-    text-align: center;
-    font-size: 1.2rem;
+  border: 1px solid #111;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /* form section */
 .form .maps {
-    display: flex;
-    background-color: #F0F0F0;
-    margin-top: 2rem;
+  display: flex;
+  background-color: #f0f0f0;
+  margin-top: 2rem;
 }
 
 .form .maps .map {
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .form .maps form {
-    flex: 1 1 45rem;
-    padding: 5rem 2rem;
-    text-align: center;
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
 }
 
 .form .maps form .input {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    background-color: #F0F0F0;
-    padding-left: 2rem;
-    color: #111;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+  color: #111;
 }
 
 .form .maps form .input input {
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.7rem;
-    background: none;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
 }
 
 .form .maps form .btn {
-    margin-top: 3rem;
-    display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 1.7rem;
-    color: #111;
-    background-color: #F0F0F0;
-    cursor: pointer;
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #111;
+  background-color: #f0f0f0;
+  cursor: pointer;
 }
-
 
 /* Footer section */
 footer {
-    background-color: #F0F0F0;
-    text-align: center;
-    padding: 0.3rem 0 1rem;
-    margin-top: 3rem;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 0.3rem 0 1rem;
+  margin-top: 3rem;
 }
 
 footer .social {
-    padding: 0.5rem 0;
-  }
-  
-footer .social a {
-    color: #111;
-    margin: 1rem;
-  }
+  padding: 0.5rem 0;
+}
 
-.navbar a:hover, 
+footer .social a {
+  color: #111;
+  margin: 1rem;
+}
+
+.navbar a:hover,
 .isidestinasi a:hover,
 footer .social a:hover,
 footer .links a:hover {
-    color: #f50606;
+  color: #f50606;
 }
 
 footer .social a i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 footer .links {
-    /* margin-bottom: 1rem; */
-    margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+  margin-top: 1rem;
 }
 
 footer .links a {
-    color: #111;
-    padding: 2rem 1rem;
+  color: #111;
+  padding: 2rem 1rem;
 }
 
 footer .credit .links a {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-footer .credit a{
-    color: #111;
-    font-weight: 700;
+footer .credit a {
+  color: #111;
+  font-weight: 700;
 }
 
 .credit p {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
-
 /* Pengecil di layar kecil */
-@media (max-width: 768px){
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
 
-    html {
-        font-size: 65%;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
+  .navbar-nav {
+    justify-content: flex-start;
+  }
 
-    .navbar-nav {
-        justify-content: flex-start; 
-    }
+  .navbar .navbar-nav a {
+    font-size: 10px;
+  }
 
-    .navbar .navbar-nav a {
-        font-size: 10px;
-    }
-    
-    .navbar-logo {
-        font-size: 20px;
-    }
+  .navbar-logo {
+    font-size: 20px;
+  }
 
-    .home .homi p {
-        font-size: 12px;
-    }
+  .home .homi p {
+    font-size: 12px;
+  }
 
-    .isiabout p,
-    .isidestinasi p,
-    .isidestinasi ol li a,
-    .isidestinasi ol li {
-        font-size: 12px;
-    }
+  .isiabout p,
+  .isidestinasi p,
+  .isidestinasi ol li a,
+  .isidestinasi ol li {
+    font-size: 12px;
+  }
 
+  .credit p,
+  .credit a {
+    font-size: 10px;
+  }
 
-    .credit p,
-    .credit a {
-        font-size: 10px;
-    }
+  .rowdes {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .rowdes {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .destinasi-img img {
-        width: 100%;
-    }
-
-    
-
-
+  .destinasi-img img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
-    html {
-      font-size: 55%;
-    }
-
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar-logo {
-        font-size: 18px;
-    }
-
-    .navbar-nav a {
-        font-size: 10px;
-        margin: 3px 5px; 
-    }
+  html {
+    font-size: 55%;
   }
 
+  .navbar {
+    padding: 5px;
+  }
 
+  .navbar-logo {
+    font-size: 18px;
+  }
 
+  .navbar-nav a {
+    font-size: 10px;
+    margin: 3px 5px;
+  }
+}
